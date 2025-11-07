@@ -1,0 +1,293 @@
+/* =======================
+   Grocery Navbar Styling
+======================= */
+
+.custom-navbar {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: #2e7d32 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #1b5e20 !important;
+}
+
+.nav-link {
+  color: #444 !important;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2e7d32 !important;
+}
+
+/* Search box */
+.search-box input {
+  border: 1px solid #c8e6c9;
+}
+
+.search-box input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 4px rgba(46, 125, 50, 0.3);
+}
+
+/* Dropdown */
+.dropdown-toggle {
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+}
+
+.dropdown-item {
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Cart Button */
+.cart-btn {
+  background-color: #2e7d32;
+  border-radius: 20px;
+  padding: 6px 14px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #256428;
+}
+
+
+.category-header {
+  background-color: #f5fff6;
+  border-top: 1px solid #d9f1da;
+  border-bottom: 1px solid #d9f1da;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Category Dropdown */
+.dropdown-toggle {
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+}
+
+.dropdown-item {
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Search bar */
+.search-bar input {
+  border: 1px solid #c8e6c9;
+  border-radius: 25px 0 0 25px;
+}
+
+.search-bar input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+.search-bar .btn {
+  border-radius: 0 25px 25px 0;
+}
+
+
+
+.hero-section {
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 85vh;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+.carousel-caption {
+  bottom: 4rem;
+}
+
+.info-box {
+  max-width: 480px;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .hero-img {
+    height: 60vh;
+  }
+
+  .carousel-caption {
+    bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .info-box {
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .info-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-box p {
+    font-size: 0.9rem;
+  }
+}
+
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 28px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #28a745; /* Bootstrap green */
+  padding-left: 5px;
+}
+
+.social-icon {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #28a745;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+/* Container spacing */
+.fresh-milk-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Heading styling */
+.fresh-milk-heading {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Card styling */
+.fresh-milk-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fresh-milk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.fresh-milk-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Title */
+.fresh-milk-card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  min-height: 50px;
+}
+
+/* Price */
+.fresh-milk-card .price {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Add to cart button */
+.fresh-milk-card .btn-add {
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.fresh-milk-card .btn-add:hover {
+  background-color: #218838;
+}
