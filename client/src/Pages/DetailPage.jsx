@@ -4,7 +4,7 @@ import { products } from '../Data/data';
 
 function DetailPage() {
       const {id} = useParams()
-      const item = products.find((item)=>item.id == id)
+      const item = products.find((item)=>item.id ==id)
 
     return(
         <>
