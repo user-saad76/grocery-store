@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.route('/freshmilk/add').post(CreateNewfreshMilk)
 router.route('/freshmilk').get(getAllfreshMilk)
-router.route('/freshmilk/:name/:price').get(getfreshMilkById)
+router.route('/freshmilk/:id').get(getfreshMilkById)
 router.route('/freshmilk/update/:id').put(updatefreshMilk)
 router.route('/freshmilk/delete/:id').delete(deletefreshMilk)
 

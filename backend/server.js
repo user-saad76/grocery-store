@@ -3,9 +3,11 @@ import express from 'express'
  import 'dotenv/config'
  import freshMilkRoutes from './routes/freshMilk.route.js'
  import bodyParser from 'body-parser'
+  import { connectDB } from './config/db.js'
 
 
  const port =  process.env.PORT || 5000;
+ connectDB().catch(error => console.log("Error in connection",error))
 server.use(bodyParser.json())
 server.use(freshMilkRoutes)
 
