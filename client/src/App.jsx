@@ -16,14 +16,14 @@ function App() {
 
  const [products, setProducts] = useState([])
  console.log(products)
- const getProductFromAPI = async()=>{
-   const res = await fetch('https://fakestoreapi.com/products');
-   const data = await res.json()
-   setProducts(data);
- }
- useEffect(()=>{
-  getProductFromAPI();
- },[])
+useEffect(() => {
+    fetch("http://localhost:7000/freshmilk") // your API URL
+      .then(res => res.json())
+      .then(data => setProducts(data.milk)) // <-- use data.milk
+      .catch(err => console.log(err));
+  }, []);
+
+   
 
  
 

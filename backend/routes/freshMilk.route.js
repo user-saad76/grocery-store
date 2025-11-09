@@ -1,7 +1,7 @@
 import express from "express";
 import { CreateNewfreshMilk, deletefreshMilk, getAllfreshMilk, getfreshMilkById, updatefreshMilk } from "../controllers/freshMilk.controller.js";
 
-const server = express();
+
 const router = express.Router()
 
 router.route('/freshmilk/add').post(CreateNewfreshMilk)
