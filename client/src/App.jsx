@@ -6,13 +6,25 @@ import Shop from './Pages/Shop';
 import Navbar from './components/Navbar';
 import FreshMilk from './Pages/FreshMilk';
 import Fruits from './Pages/Fruits';
-import { products } from './Data/data';
 import DetailPage from './Pages/DetailPage';
+import { useEffect } from 'react';
 
 
 
 
 function App() {
+
+ const [products, setProducts] = useState([])
+ console.log(products)
+ const getProductFromAPI = async()=>{
+   const res = await fetch('https://fakestoreapi.com/products');
+   const data = await res.json()
+   setProducts(data);
+ }
+ useEffect(()=>{
+  getProductFromAPI();
+ },[])
+
  
 
   return (
